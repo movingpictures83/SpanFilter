@@ -22,7 +22,7 @@ void SpanFilterPlugin::output(std::string file) {
    std::string command = "export OLDPATH=${PYTHONPATH}; ";
    command += "export PYTHONPATH=/usr/local/lib64/python3.9/site-packages/:${PYTHONPATH}; ";
    command += "python3.9 plugins/SpanFilter/runSpanFilter.py ";
-   command += PluginManager::addPrefix(parameters["sqldatabase"]) + " ";
+   command += parameters["sqldatabase"] + " ";
    command += parameters["pdbinput"] + " ";
    command += PluginManager::addPrefix(parameters["csvfile"]) + " ";
    command += parameters["span"] + " ";

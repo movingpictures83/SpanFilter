@@ -1,0 +1,2 @@
+Prefix plugins/SpanFilter/example/
+Plugin SpanFilter inputfile parameters.txt outputfile EPI_SEQ_span_filt_hits
